@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me | Sharjeel Syed</title>
+    <!-- viewport tag is required for media queries to work on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- one style sheet per view port, picked by the browser using the media attribute -->
+    <link rel="stylesheet" type="text/css" href="css/full.css" media="only screen and (min-width:960px)">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
+    <link rel="stylesheet" type="text/css" href="css/smartphone.css" media="only screen and (max-width:480px)">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Sharjeel Syed</h1>
+            <!-- nav holds the links to the 4 pages, "current" marks the page being viewed -->
+            <nav>
+                <a class="button" href="index.html">Home</a>
+                <a class="button" href="about.html">About Me</a>
+                <a class="button" href="projects.html">Projects</a>
+                <a class="button current" href="contact.html">Contact Me</a>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <main>
+            <article>
+                <h2>Contact Me</h2>
+                <p>Send me your questions, comments and project related queries.</p>
+                <form action="mailto:sharjeel.syed@ontariotechu.net" method="post" enctype="text/plain" name="contact_form">
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <!-- pattern allows letters, spaces, hyphens and apostrophes only -->
+                        <input type="text" id="name" name="name" size="32" required
+                               pattern="[A-Za-z\x27 \-]{2,50}" title="2 to 50 letters only" placeholder="Enter your name">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <!-- type=email makes the browser check for a valid email format -->
+                        <input type="email" id="email" name="email" size="32" required placeholder="Enter your email">
+                    </p>
+                    <p>
+                        <label for="phone">Cell No.:</label><br>
+                        <!-- pattern forces the format 905-555-1234 -->
+                        <input type="tel" id="phone" name="phone" size="32" required
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 905-555-1234" placeholder="905-555-1234">
+                    </p>
+                    <p>
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" name="comments" cols="40" rows="6" required minlength="10"
+                                  placeholder="Question, comment or query"></textarea>
+                    </p>
+                    <p>
+                        <label for="robot">What is 2+2? (so I know you are not a robot)</label><br>
+                        <!-- pattern only accepts the answer 4 -->
+                        <input type="text" id="robot" name="robot" size="5" required pattern="4" title="Type the number 4">
+                    </p>
+                    <p>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Send message">
+                    </p>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>Contact: <a href="mailto:sharjeel.syed@ontariotechu.net">sharjeel.syed@ontariotechu.net</a></p>
+            <p>&copy; 2026 Sharjeel Syed. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
