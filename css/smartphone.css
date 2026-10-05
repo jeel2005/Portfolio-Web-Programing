@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* Phone: 480px and narrower. Wrapper fills the screen and everything stacks in one column. */
+/* Colour scheme (Adobe Color): #264653 dark teal, #2A9D8F teal, #E9C46A yellow, #F4A261 orange, #E76F51 red-orange */
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", Verdana, Geneva, Arial, sans-serif;
+    font-size: 14px;
+    color: #264653;
+    /* ANGLED linear gradient (135deg) on the page background */
+    background: linear-gradient(135deg, #2A9D8F 0%, #E9C46A 100%);
+    background-attachment: fixed;
+}
+
+#wrapper
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #264653;
+}
+
+header
+{
+    padding: 10px 15px;
+    color: #ffffff;
+    /* STRAIGHT linear gradient (to bottom) on the header */
+    background: linear-gradient(to bottom, #264653 0%, #2A9D8F 100%);
+}
+
+header h1
+{
+    font-size: 1.5em;
+}
+
+h1, h2, h3, p
+{
+    margin: 10px 15px;
+}
+
+/* nav links are floated blocks, 2 per row (2 x 45%) */
+.button
+{
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 5px;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #264653;
+    background-color: #E9C46A;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #264653;
+}
+
+/* shadow flips to the other side on hover, like the lecture button */
+.button:hover,
+.button:focus
+{
+    background-color: #F4A261;
+    box-shadow: -3px -3px 3px #264653;
+}
+
+/* the page being viewed */
+.current
+{
+    font-weight: bold;
+    background-color: #F4A261;
+}
+
+main
+{
+    padding: 10px 0px 20px;
+}
+
+/* home page boxes */
+.box
+{
+    float: none;
+    width: auto;
+    min-height: 0px;
+    margin: 1.5%;
+    background-color: #F4F1E8;
+    border-top: 5px solid #2A9D8F;
+    border-radius: 10px;
+}
+
+figure
+{
+    float: none;
+    width: 80%;
+    margin: 10px 15px;
+}
+
+figure img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+video
+{
+    max-width: 90%;
+    margin: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #264653;
+}
+
+.project
+{
+    float: left;
+    width: 98%;
+    min-height: 0px;
+    margin: 1%;
+    background-color: #F4A261;
+    border-radius: 10px;
+}
+
+input, textarea
+{
+    max-width: 90%;
+    padding: 5px;
+    font-family: inherit;
+    border: 2px solid #2A9D8F;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #264653;
+}
+
+input[type="submit"]
+{
+    /* black text on #E76F51 = 6.79:1 contrast, passes WAVE (white was only 3.09:1) */
+    color: #000000;
+    background-color: #E76F51;
+}
+
+input[type="reset"]
+{
+    color: #264653;
+    background-color: #E9C46A;
+}
+
+footer
+{
+    clear: both;
+    padding: 5px 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #264653;
+}
+
+footer a
+{
+    color: #E9C46A;
+}
+
+.clear
+{
+    clear: both;
+}
