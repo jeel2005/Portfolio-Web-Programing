@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Sharjeel Syed</title>
+    <!-- viewport tag is required for media queries to work on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- one style sheet per view port, picked by the browser using the media attribute -->
+    <link rel="stylesheet" type="text/css" href="css/full.css" media="only screen and (min-width:960px)">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
+    <link rel="stylesheet" type="text/css" href="css/smartphone.css" media="only screen and (max-width:480px)">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Sharjeel Syed</h1>
+            <!-- nav holds the links to the 4 pages, "current" marks the page being viewed -->
+            <nav>
+                <a class="button" href="index.html">Home</a>
+                <a class="button current" href="about.html">About Me</a>
+                <a class="button" href="projects.html">Projects</a>
+                <a class="button" href="contact.html">Contact Me</a>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <main>
+            <article>
+                <h2>About Me</h2>
+                <!-- figure + figcaption groups the photo with its caption; alt text is needed for WAVE -->
+                <figure>
+                    <img src="images/me.jpg" alt="Photo of Sharjeel Syed">
+                    <figcaption>Sharjeel Syed</figcaption>
+                </figure>
+                <p>Hi, I am Sharjeel. I study Networking and IT Security. I am currently in my third year of university.</p>
+                <p>Outside of class I like learning about how people are using newer technologies such as AI and machine learning to help with their daily lives and work.</p>
+                <p>I am looking for a summer co-op in the field of networking or cybersecurity.</p>
+                <div class="clear"></div>
+                <h3>Watch my introduction</h3>
+                <!-- controls shows play/pause, poster is the picture shown before playing -->
+                <video controls width="320" height="240" poster="images/poster.png" preload="metadata">
+                    <source src="images/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </main>
+        <footer>
+            <p>Contact: <a href="mailto:sharjeel.syed@ontariotechu.net">sharjeel.syed@ontariotechu.net</a></p>
+            <p>&copy; 2026 Sharjeel Syed. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
