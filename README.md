@@ -4,7 +4,7 @@ Live site: https://jeel2005.github.io/Portfolio-Web-Programing/
 Repository: https://github.com/jeel2005/Portfolio-Web-Programing
 
 ## Pages
-Four separate HTML5 files (not a single page app), all linked from the same `<nav>` menu:
+Four separate HTML5 files, all linked from the same `<nav>` menu:
 
 | File | Content |
 |------|---------|
@@ -26,7 +26,7 @@ All rules are built-in HTML5 validation, no JavaScript:
 - **Email**: `type="email"` checks for a valid address format, `required`
 - **Cell No.**: `type="tel"`, `pattern` forces the format `905-555-1234`, `required`
 - **Comments**: `required`, `minlength="10"`
-- **2+2 check**: `pattern="4"` so only the answer 4 is accepted
+- **2+2 check**: `pattern="4"` so only the answer 4 is accepted. Taken from the example in the assignment.
 
 ## View ports (fluid design + media queries, no Flexbox)
 Each HTML page links three style sheets. The browser only applies the one whose `media` query matches the screen width.
@@ -61,13 +61,13 @@ Contrast was checked so text passes WCAG AA. For example, the Submit button uses
 ## Testing
 | Test | Tool | Result |
 |------|------|--------|
-| HTML | W3C Markup Validation Service (https://validator.w3.org/) | I NEED TO NOT FORGET TO DO THIS|
-| CSS | W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/), CSS level 3 + SVG | DO THIS |
-| Links | W3C Link Checker (https://validator.w3.org/checklink) | ADD RESULT (run on the live GitHub Pages URL) |
-| Spelling | ADD TOOL NAME (e.g. VS Code Code Spell Checker) | ADD RESULT |
-| Accessibility | WAVE (https://wave.webaim.org/) | ADD RESULT (run on the live GitHub Pages URL) |
+| HTML | W3C Markup Validation Service (https://validator.w3.org/) | about.html has no errors. contact.html has no errors. index.html has no errors. projects.html has no errors|
+| CSS | W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/), CSS level 3 + SVG |full.css has no errors. smartphone.css has no errors. tablet.css has no errors.  |
+| Links | W3C Link Checker (https://validator.w3.org/checklink) | I had 1 issue with the link. It could not check my mailto link.|
+| Spelling | Grammarly | spelling mistakes were there when intially making the code but fixed before the first push. |
+| Accessibility | WAVE (https://wave.webaim.org/) | WAVE had no issues with my website and gave it a 10/10 (run on the live GitHub Pages URL) |
 
 ## Citations
 - Font: Poppins from Google Fonts (https://fonts.google.com), loaded with the `<link>` tags Google provides.
 - List any other code not from lectures (source + author).
-Claude helped with formatting code and README file.
+Claude helped with formatting code and helped make comments. It also helped with deciding the colour scheme and helped with the README.
