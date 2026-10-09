@@ -3,6 +3,8 @@
 Live site: https://jeel2005.github.io/Portfolio-Web-Programing/
 Repository: https://github.com/jeel2005/Portfolio-Web-Programing
 
+This README file explains how my code works and the thought process I had while coding my portfolio.
+
 ## Pages
 Four separate HTML5 files, all linked from the same `<nav>` menu:
 
@@ -34,9 +36,13 @@ Each file is complete on its own. All layout uses percentage widths and `float`,
 
 | File | Width range | Why |
 |------|-------------|-----|
-| css/full.css | 960px and up | Laptops and desktops. The wrapper is 85% of the screen, so it grows and shrinks with the window and leaves some of the gradient background showing. Nav buttons sit in one row (4 × 22%). Home boxes sit 3 per row (30%), project boxes 2 per row (48%), and the About Me photo (35%) floats beside the text. |
-| css/tablet.css | 481px - 959px | Tablets and small laptop windows. 481px starts just above the largest phone width and 959px ends just before the desktop layout. The wrapper fills 95% of the screen because there is less room to waste. The layout stays the same as desktop, but the photo is a bit wider (40%), boxes are a bit taller, and the font drops to 15px. |
-| css/smartphone.css | up to 480px | Phones in portrait (most are 320-430px wide). The wrapper is 100% wide. Nav buttons become a 2 × 2 grid (45% each). Home and project boxes stop floating and stack in one column, and the photo sits above the text. The font drops to 14px. |
+### CSS Files and Responsive Layout
+
+| CSS File             | Screen Size  | Description                                                                                                                                                                                                                                                             
+| `css/full.css`       | 960px and up | Used for laptops and desktops. The wrapper takes up 85% of the screen, leaving some of the gradient background visible. Navigation buttons appear in one row. Home boxes appear 3 per row, project boxes appear 2 per row, and the About Me photo sits beside the text. |
+| `css/tablet.css`     | 481px–959px  | Used for tablets and smaller browser windows. The wrapper takes up 95% of the screen to give more space to the content. The layout is similar to the desktop version, but the photo is wider, the boxes are taller, and the font size is 15px.                          |
+| `css/smartphone.css` | Up to 480px  | Used for smartphones. The wrapper takes up the full screen width. Navigation buttons appear in a 2-by-2 grid, while the home and project boxes stack vertically. The About Me photo appears above the text, and the font size is 14px.                                  |
+
 
 The `<meta name="viewport" content="width=device-width, initial-scale=1.0">` tag in every page is required. Without it, phones would render the desktop layout zoomed out and the media queries would never match.
 
@@ -56,7 +62,6 @@ I entered the palette into Adobe Color (https://color.adobe.com/create) using th
 | Orange | #F4A261 | Current page and hover nav button, project boxes |
 | Red-orange | #E76F51 | Submit button |
 
-Contrast was checked so text passes WCAG AA. For example, the Submit button uses black text on #E76F51 (6.79:1) because white was only 3.09:1.
 
 ## Testing
 | Test | Tool | Result |
@@ -65,9 +70,9 @@ Contrast was checked so text passes WCAG AA. For example, the Submit button uses
 | CSS | W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/), CSS level 3 + SVG |full.css has no errors. smartphone.css has no errors. tablet.css has no errors.  |
 | Links | W3C Link Checker (https://validator.w3.org/checklink) | I had 1 issue with the link. It could not check my mailto link.|
 | Spelling | Grammarly | spelling mistakes were there when intially making the code but fixed before the first push. |
-| Accessibility | WAVE (https://wave.webaim.org/) | WAVE had no issues with my website and gave it a 10/10 (run on the live GitHub Pages URL) |
+| Accessibility | WAVE (https://wave.webaim.org/) | WAVE had no issues with my website and gave it a 10/10  |
+This was all checked when the wesbite was near completion and functioned as purpose.
 
 ## Citations
 - Font: Poppins from Google Fonts (https://fonts.google.com), loaded with the `<link>` tags Google provides.
-- List any other code not from lectures (source + author).
 Claude helped with formatting code and helped make comments. It also helped with deciding the colour scheme and helped with the README.
